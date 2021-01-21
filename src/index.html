@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .row{
+            margin-top:25vh;
+        }
+    </style>
     <title>Secret Message</title>
 </head>
 <body>
     <div class="row">
         <div class="col s8 offset-s2">
-            <div class="card-panel">
+            <div id="message-form" class="card-panel">
                 <form>
                     <label>Enter a Secret Message</label>
-                    <input />
+                    <input id="message-input"/>
                     <button class="btn">Create</button>
                 </form>
+            </div>
+
+            <div id="link-form" class="card-panel hide">
+                <div>
+                    Share this link with your friend
+                    <input id="link-input" />
+                </div>
             </div>
         </div>
     </div>
